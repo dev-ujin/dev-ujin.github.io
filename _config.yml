@@ -33,7 +33,7 @@ google_site_verification: "UA-96359860-1"
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag

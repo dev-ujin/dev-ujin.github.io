@@ -33,3 +33,15 @@ void print_hi(string name) {
 print_hi("Tom");
 /* prints 'Hi, Tom' to STDOUT. */
 {% endhighlight %}
+
+{% highlight java linenos %}
+String url = hubURL;
+
+if(browser.equals("chrome")) {
+  TestBrowser = "chrome";
+
+  cap = DesiredCapabilities.chrome();
+  RemoteWebDriver driver = new RemoteWebDrive(new);
+
+} else if ()
+{% endhighlight %}
