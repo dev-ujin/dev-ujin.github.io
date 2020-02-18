@@ -26,10 +26,10 @@ paginate: 5
 github_profile: "https://github.com/dev-ujin"
 user: "만두 (Manduu)"
 # user_email: "john@doe.com"
-contact_url: "https://goo.gl/tVljbV"
+contact_url: "https://docs.google.com/forms/d/e/1FAIpQLSeW5sfpjQ7hLwLg6Vi_bWV4aYNEsnG8a3YlljOf9pxV-SZtmA/viewform?usp=sf_link"
 # google_tracking_id: "UA-96359860-1"
 google_site_verification: "UA-96359860-1"
-# disqus_shortname: "matjek"
+disqus_shortname: "manduu"
 
 # Build settings
 markdown: kramdown
