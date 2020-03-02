@@ -49,7 +49,7 @@ tags: 정보보안 정보보호일반 대칭키 암호
 - 복호화 과정은 암호화 과정과 동일. 입력은 암호문과 보조키 K<sub>i</sub>이며 보조키의 순서는 암호화 과정의 반대로 K<sub>n-1</sub>부터 K<sub>1</sub>.
 - 장점 : 알고리즘의 수행속도가 빠르고, 하드웨어 및 소프트웨어의 구현이 용이하고, 아직 구조상에 문제점이 발견되고 있지 않음.
 
-![Feistel 구조](../assets/res/feistel-structure.png){: width="80%"}
+![Feistel 구조](https://dev-ujin.github.io/assets/res/feistel-structure.png){: width="80%"}
 
 
 
