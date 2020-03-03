@@ -47,9 +47,35 @@ tags: 정보보안 정보보호일반 대칭키 암호
     - 키 K의 길이는 64비트 내외. 최근에는 128비트를 권장.
     - 라운드 수는 16회 이상.
 - 복호화 과정은 암호화 과정과 동일. 입력은 암호문과 보조키 K<sub>i</sub>이며 보조키의 순서는 암호화 과정의 반대로 K<sub>n-1</sub>부터 K<sub>1</sub>.
+- 라운드 함수를 F, 라운드키를 K<sub>i</sub>라 할 때, i번째 라운드 과정은
+    - L<sub>i</sub> = R<sub>i-1<sub>
+    - R<sub>i</sub> = L<sub>i-1</sub> &oplus; F<sub>i</sub>(R<sub>i-1</sub>, K<sub>i</sub>)
+    - 최종 라운드에서는 좌우 블록을 한 번 더 교환해야함.
 - 장점 : 알고리즘의 수행속도가 빠르고, 하드웨어 및 소프트웨어의 구현이 용이하고, 아직 구조상에 문제점이 발견되고 있지 않음.
+![Feistel 구조](https://dev-ujin.github.io/assets/res/feistel_structure.png){: .center}
 
-![Feistel 구조](https://dev-ujin.github.io/assets/res/feistel-structure.png){: width="80%"}
+##### SPN(Substitution-Permutation Network) 구조
+- '여러 개의 함수를 중첩하면 개별 함수로 이루어진 암호보다 안전하다'는 Shannon의 이론에 근거해 치환 암호와 전치 암호를 중첩하는 형태로 개발한 암호.
+- 입력을 여러 개의 소블록으로 나누고 각 소블록을 S-box로 입력하여 대치시키고, 그 출력을 P-box로 전치하는 과정을 반복하는 방식.
+![SPN 구조](https://dev-ujin.github.io/assets/res/spn_structure.png){: .center}
 
+##### 블록 암호에 대한 공격
+1. 차분 분석(차분 해독법, Differential Cryptanalsis)
+   - '평문의 일부를 변경하면 암호문이 어떻게 변화하는가?'를 조사하는 암호 해독법.
+   - 블록 암호에서는 평문이 한 비트라도 달라지면 암호문은 전혀 다른 비트 패턴으로 변화하는데, 이 암호문의 변화 형태를 조사하여 해독하는 것.
+2. 선형 분석(선형 해독법, Linear Cryptanalysis)
+   - '평문과 암호문 비트를 몇 개 정도 XOR해서 0이 되는 확률을 조사'하는 해독 방법. 마츠이가 개발.
+   - 암호문이 충분히 랜덤하게 되어 있으면, 평문과 암호문의 비트를 몇 개 XOR한 결과가 0이 되는 확률은 1/2일 것이므로 1/2에서 크게 벗어나는 비트의 갯수를 조사하여 키에 관한 정보를 얻는 것.
+3. 전수공격법(Exhaustive Key Search)
+   - 암호화할 때 일어날 수 있는 가능한 모든 경우에 대하여 조사하는 방법. Diffie와 Hellman이 제안.
+   - 경우의 수가 많은 경우에는 실현 불가능한 방법.
+4. 통계적 분석(Statistical Analysis)
+   - 알려진 모든 통계적인 자료를 이용하여 해독하는 방법.
+5. 수학적 분석(Mathematical Analysis)
+   - 통계적인 방법을 포함하며 수학적 이론을 이용하여 해독하는 방법.
 
+##### 참고
+1. Feistel 구조 : <https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8A%A4%ED%85%94_%EC%95%94%ED%98%B8>
+2. SPN 구조 : <https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network>
 
+<style>.center {display: block;margin: auto;align: center;width: 50%;height: 40%;}</style>
