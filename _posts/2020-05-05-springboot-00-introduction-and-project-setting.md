@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "00.SpringBoot란, JPA란, 프로젝트 시작하기"
-date:   2020-03-30 03:32:00 0800
+date:   2020-05-05 03:17:00 0800
 categories: SpringBoot
 tags: SpringBoot JPA 실전스프링부트와JPA의활용1
 ---
@@ -24,8 +24,23 @@ tags: SpringBoot JPA 실전스프링부트와JPA의활용1
 #### 프로젝트 시작하기
 ##### 프로젝트 설정
 - [스프링 부트 스타터](https://start.spring.io/)를 사용하면 프로젝트 환경설정을 쉽게 설정할 수 있음
-![ ](https://dev-ujin.github.io/assets/res/springboot_starter_setting.png){: .center}
-- 다음과 같이 설정하고 의존성(Dependencies)도 마찬가지로 추가
+- Project : Gradle Project
+- Language : Java
+- Spring Boot : 2.1.13
+- Project Metadata
+  - Group : jpabook
+  - Artifact : jpashop
+  - Name : jpashop
+  - Description : Demo project for Spring Boot
+  - Package name : jpabook.jpashop
+  - Packaging : jar
+  - Java : 8
+- Dependencies에는 아래 5가지를 추가
+  - Spring Web
+  - Thymeleaf
+  - Spring Data JPA
+  - H2 Database
+  - Lombok
 - GENERATE를 눌러 다운로드 받음
 - build.gradle파일을 보면 프로젝트 설정 요소들을 볼 수 있음
 
