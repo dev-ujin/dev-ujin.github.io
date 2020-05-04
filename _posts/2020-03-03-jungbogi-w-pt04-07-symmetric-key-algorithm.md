@@ -60,18 +60,18 @@ tags: 정보보안 정보보호일반 대칭키 암호
 ![SPN 구조](https://dev-ujin.github.io/assets/res/spn_structure.png){: .center}
 
 ##### 블록 암호에 대한 공격
-1. 차분 분석(차분 해독법, Differential Cryptanalsis)
+1. `차분 분석(차분 해독법, Differential Cryptanalsis)`
    - '평문의 일부를 변경하면 암호문이 어떻게 변화하는가?'를 조사하는 암호 해독법.
    - 블록 암호에서는 평문이 한 비트라도 달라지면 암호문은 전혀 다른 비트 패턴으로 변화하는데, 이 암호문의 변화 형태를 조사하여 해독하는 것.
-2. 선형 분석(선형 해독법, Linear Cryptanalysis)
+2. `선형 분석(선형 해독법, Linear Cryptanalysis)`
    - '평문과 암호문 비트를 몇 개 정도 XOR해서 0이 되는 확률을 조사'하는 해독 방법. 마츠이가 개발.
    - 암호문이 충분히 랜덤하게 되어 있으면, 평문과 암호문의 비트를 몇 개 XOR한 결과가 0이 되는 확률은 1/2일 것이므로 1/2에서 크게 벗어나는 비트의 갯수를 조사하여 키에 관한 정보를 얻는 것.
-3. 전수공격법(Exhaustive Key Search)
+3. `전수공격법(Exhaustive Key Search)`
    - 암호화할 때 일어날 수 있는 가능한 모든 경우에 대하여 조사하는 방법. Diffie와 Hellman이 제안.
    - 경우의 수가 많은 경우에는 실현 불가능한 방법.
-4. 통계적 분석(Statistical Analysis)
+4. `통계적 분석(Statistical Analysis)`
    - 알려진 모든 통계적인 자료를 이용하여 해독하는 방법.
-5. 수학적 분석(Mathematical Analysis)
+5. `수학적 분석(Mathematical Analysis)`
    - 통계적인 방법을 포함하며 수학적 이론을 이용하여 해독하는 방법.
 
 ##### 참고
