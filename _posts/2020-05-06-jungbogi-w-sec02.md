@@ -246,7 +246,7 @@ _____
 5. `DRM 제어기(DRM Controller)` : 사용자의 디바이스에서 컨텐츠가 지속적으로 보호될 수 있도록 **프로세스를 제어**
 
 ###### 모델
-![DRM모델](../_site/assets/res/drm_model.png)
+![DRM모델](https://dev-ujin.github.io/assets/res/drm_model.png)
 - `권리표현언어(REL, Rights Expression Language)` : **컨텐츠 사용 규칙을 표현하는 언어**
   - ODRL(Open Digital Rights Language)
   - MPEG(Moving Picture Expert Group)
