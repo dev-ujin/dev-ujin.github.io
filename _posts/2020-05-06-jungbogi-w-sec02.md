@@ -233,26 +233,26 @@ _____
 |공격 강인성|상대적 약함|상대적 강함|상대적 강함|
 
 ##### 디지털 저작권 관리(DRM, Digital Rights Management)
-###### 개념
+###### DRM 개념
 - `디지털 저작권 관리(DRM, Digital Rights Management)` : 소유자 혹은 위임자가 지정하는 다양한 방식으로 제어할 수 있게 하는 기술적인 방법
   - DRM이 제어하는 컨텐츠 접근은 실행, 보기, 복제, 출력, 변경 등을 포함
   - DRM이 제어하는 디지털 컨텐츠는 오디오, 비디오, 이미지, 텍스트, 멀티미디어, 컴퓨터 소프트웨어 등을 포함
 
-###### 구성 요소
+###### DRM 구성 요소
 1. `메타데이터(Metadata)` : 컨텐츠 생명주기 범위 내에서 관리되어야 할 **각종 데이터의 구조 및 정보**
 2. `패키저(Packager)` : **컨텐츠와 메타데이터**를 Secure Container 포맷으로 **패키징하는 모듈**
 3. `시큐어 컨테이너(Secure Container)` : DRM의 보호 범위 내에서 유통되는 **컨텐츠의 배포 단위**
 4. `식별자(Identifier)` : 컨텐츠를 식별하기 위한 식별자
 5. `DRM 제어기(DRM Controller)` : 사용자의 디바이스에서 컨텐츠가 지속적으로 보호될 수 있도록 **프로세스를 제어**
 
-###### 모델
-![DRM모델](https://dev-ujin.github.io/assets/res/drm_model.png)
+###### DRM 모델
+![DRM모델](https://dev-ujin.github.io/assets/res/drm_model.png){: .img01}
 - `권리표현언어(REL, Rights Expression Language)` : **컨텐츠 사용 규칙을 표현하는 언어**
   - ODRL(Open Digital Rights Language)
   - MPEG(Moving Picture Expert Group)
     - <r>MPEG-21 DII(Digital Item Identification)</r>
   
-###### <r>기술의 예</r>
+###### <r>DRM 기술의 예</r>
 - `PKI 기반의 불법복제 방지기술` : **컨텐츠를 소비자의 암호화 키**로 패키징해 다른 사람들이 이용할 수 없도록 함
    - 단점 : 소비자 종속 암호화 -> 컨텐츠 배포 서버의 **프로세스 부담이 가중**되고, **슈퍼 배포자와 같은 기능이 없어 디지털컨텐츠 유통에 부적합**
 - `DOI 기반의 저작권 보호기술` : 저작권 관리 정보를 바탕으로 **저작권 인증을 부여하는 기술**
@@ -268,10 +268,6 @@ r {
     background-color: #d33a4eb0;
     border-radius: 3px;
 }
-#one {
-        width: 15%
-    }
-#two {
-        width: 43%
-    }
+#one {width: 15%;}
+#two {width: 43%;} .img01 {width:60%;height:60%;}
 </style>
