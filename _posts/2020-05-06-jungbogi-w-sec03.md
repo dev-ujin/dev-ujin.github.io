@@ -10,6 +10,7 @@ tags: 정보보안 정보보호일반 암호학
 > `키워드` <bl>보충내용</bl> <r>기출에 나온 내용 보충</r>
 
 #### 1. 현대 대칭키 암호
+`현대 블록 암호` : **이동요소(Shift), 교환요소(Swap), 분할요소(Split), 조합요소(Combination), 전치장치(P-Box), 치환장치(S-Box), XOR의 조합**으로 만들어짐
 ##### 현대 블록 암호
 ###### 현대 블록 암호 개념 (합성 암호)
 - <bl>현대 블록 암호는 모두 합성 암호</bl>
@@ -288,8 +289,8 @@ _____
 
 _____
 ##### 참고
-1. Feistel 구조 이미지 : <https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8A%A4%ED%85%94_%EC%95%94%ED%98%B8>
-2. SPN 구조 이미지 : <https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network>
+1. Feistel 구조 이미지 : [위키피디아](https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8A%A4%ED%85%94_%EC%95%94%ED%98%B8)
+2. SPN 구조 이미지 : [위키피디아](https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network)
   
 
 <style>
