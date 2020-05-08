@@ -79,7 +79,7 @@ tags: 정보보안 정보보호일반 암호학
         - **One-Time Pad의 절충안**
         - SW와 HW환경에서 모두 구현될 수 있지만, **HW구현이 더욱 용이**
         - **시프트 레지스터와 귀환 함수**로 구성됨
-  
+
         ![FSR구조](https://dev-ujin.github.io/assets/res/FSR.png){: .img02}
     3. `선형 귀환 시프트 레지스터(LFSR, Linear Feedback Shift Register)`
         - **HW로 쉽게 구현**
@@ -284,6 +284,13 @@ _____
 - 응용 : ATM(Asynchronous Transfer Mode) 네트워크 보안, IPSec(IP Security)
 
 
+
+
+_____
+##### 참고
+1. Feistel 구조 이미지 : <https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8A%A4%ED%85%94_%EC%95%94%ED%98%B8>
+2. SPN 구조 이미지 : <https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network>
+  
 
 <style>
 
