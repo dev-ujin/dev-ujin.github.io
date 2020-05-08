@@ -302,6 +302,6 @@ r {
     background-color: #d33a4eb0;
     border-radius: 3px;
 }
-.img01 {width: 60%;height: 60%;margin:5px;}
+.img01 {display:inline-block;margin:5px;width:100%;height:100%;}
 </style>
 
