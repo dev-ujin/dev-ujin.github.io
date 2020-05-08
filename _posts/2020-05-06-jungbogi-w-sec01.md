@@ -139,7 +139,7 @@ r {
     background-color: #d33a4eb0;
     border-radius: 3px;
 }
-.img01 {width:50%;height:50%;}
+.img01 {width:60%;height:60%;}
 #one {width: 20%}
 #two {width: 25%}
 #third {width: 15%}
