@@ -40,12 +40,14 @@ tags: 정보보안 정보보호일반 암호학
         - L<sub>i</sub> = R<sub>i-1<sub>
         - R<sub>i</sub> = L<sub>i-1</sub> &oplus; F<sub>i</sub>(R<sub>i-1</sub>, K<sub>i</sub>)
         - 최종 라운드에서는 좌우 블록을 한 번 더 교환해야함
+  
       ![Feistel 구조](https://dev-ujin.github.io/assets/res/feistel_structure.png){: .img01}
     - 장점 : 알고리즘 수행속도가 빠르고, 구현이 용이, 아직까지 구조상의 문제점 발견하지 못함
  
 2. `SPN 구조(Substitution Permutation Network)`
     - 여러 개의 함수를 중첩하면 개별 함수로 이루어진 암호보다 안전하다는 이론에 근거
     - 구조 : 입력을 여러 개의 소블록으로 나누어 S-Box에 입력하고, S-Box의 출력을 다시 P-Box의 입력하는 과정을 반복
+
     ![SPN 구조](https://dev-ujin.github.io/assets/res/spn_structure.png){: .img01}
 
 ##### 블록 암호에 대한 공격
@@ -77,10 +79,12 @@ tags: 정보보안 정보보호일반 암호학
         - **One-Time Pad의 절충안**
         - SW와 HW환경에서 모두 구현될 수 있지만, **HW구현이 더욱 용이**
         - **시프트 레지스터와 귀환 함수**로 구성됨
+  
         ![FSR구조](https://dev-ujin.github.io/assets/res/FSR.png){: .img02}
     3. `선형 귀환 시프트 레지스터(LFSR, Linear Feedback Shift Register)`
         - **HW로 쉽게 구현**
         - **많은 스트림 암호가 LFSR를 이용**
+
         ![LFSR구조](https://dev-ujin.github.io/assets/res/LFSR.png){: .img02}
     4. `비선형 귀환 시프트 레지스터(NLFSR, Nonlinear Feedback Shift Register)`
         - 선형성 때문에 공격에 취약한 **LFSR보다 안전하게 설계**할 수 있음
@@ -291,7 +295,7 @@ r {
     background-color: #d33a4eb0;
     border-radius: 3px;
 }
-#img01 {width: 50%;height: 40%;}
-#img02 {width: 50%;height: 50%;}
+.img01 {width: 60%;height: 40%;margin:5px;}
+.img02 {width: 60%;height: 50%;margin:5px;}
 </style>
 
