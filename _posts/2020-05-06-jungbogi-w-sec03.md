@@ -80,12 +80,12 @@ tags: 정보보안 정보보호일반 암호학
         - SW와 HW환경에서 모두 구현될 수 있지만, **HW구현이 더욱 용이**
         - **시프트 레지스터와 귀환 함수**로 구성됨
 
-        ![FSR구조](https://dev-ujin.github.io/assets/res/FSR.png){: .img01}
+        ![FSR구조](https://dev-ujin.github.io/assets/res/FSR.png){: .img02}
     3. `선형 귀환 시프트 레지스터(LFSR, Linear Feedback Shift Register)`
         - **HW로 쉽게 구현**
         - **많은 스트림 암호가 LFSR를 이용**
 
-        ![LFSR구조](https://dev-ujin.github.io/assets/res/LFSR.png){: .img01}
+        ![LFSR구조](https://dev-ujin.github.io/assets/res/LFSR.png){: .img02}
     4. `비선형 귀환 시프트 레지스터(NLFSR, Nonlinear Feedback Shift Register)`
         - 선형성 때문에 공격에 취약한 **LFSR보다 안전하게 설계**할 수 있음
 2. `비동기식 스트림 암호` : K 스트림의 각 비트는 이전의 P나 C에 **종속적**으로 결정됨 
@@ -302,6 +302,8 @@ r {
     background-color: #d33a4eb0;
     border-radius: 3px;
 }
-.img01 {display:inline-block;margin:5px;width:100%;height:100%;}
-</style>
 
+.img01 {margin:1rem;width:60%;height:60%;}
+.img02 {margin:1rem;width:80%;height:80%;}
+
+</style>
