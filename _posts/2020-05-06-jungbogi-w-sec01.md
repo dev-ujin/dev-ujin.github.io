@@ -131,11 +131,6 @@ _____
   - 어떤 하나의 제어수단의 실패가 전체 보안실패를 야기한다는 것을 의미
 
 <style>
-k {
-    background-color: #8671b8b2;
-    border-radius: 3px;
-    font-weight: bold;
-}
 bl {
     background-color: #3aa5d3b0;
     border-radius: 3px;
