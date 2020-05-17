@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[정보보안기사/필기]05. 해시함수와 응용"
-date:   2020-05-11 21:13:00 0800
+date:   2020-05-17 17:47:00 0800
 categories: 정보보안기사필기
 tags: 정보보안 정보보호일반 암호학
 ---
@@ -18,6 +18,8 @@ r {
     background-color: #d33a4eb0;
     border-radius: 3px;
 }
+.img01 {margin:1rem;width:80%;}
+.img02 {margin:1rem;width:80%;}
 </style>
 
 #### 1. 일방향 해시함수
@@ -180,10 +182,10 @@ _____
 
 ##### SHA-512
 ###### 구조
-![SHA-512구조](https://dev-ujin.github.io/assets/res/SHA512_Structure.png)
+![SHA-512구조](https://dev-ujin.github.io/assets/res/SHA512_Structure.png){: .img01}
 
 ###### 길이필드와 패딩
-![SHA-512길이필드와 패딩](https://dev-ujin.github.io/assets/res/SHA512_Length_and_Padding.png)
+![SHA-512길이필드와 패딩](https://dev-ujin.github.io/assets/res/SHA512_Length_and_Padding.png){: .img02}
 - 길이필드 : 부호 없는 정수로, 해시값이 같으면서 입력값이 다른 메시지를 찾는 것을 어렵게 함 
 
 ###### 안전성
@@ -199,15 +201,15 @@ _____
 _____
 #### 3. 메시지 인증코드(MAC, Message Authentication Code)
 
-##### 변경감지코드(MDC, Modification Detection Code)
+##### `변경감지코드(MDC, Modification Detection Code)`
 - **키가 없는 해시함수**
 
-![MDC](https://dev-ujin.github.io/assets/res/MAC.png)
+![MDC](https://dev-ujin.github.io/assets/res/MAC.png){: .img01}
 
-##### 메시지인증코드(MAC, Message Authentication Code)
+##### `메시지인증코드(MAC, Message Authentication Code)`
 - **키가 있는 해시함수**
 
-![MAC](https://dev-ujin.github.io/assets/res/MAC.png)
+![MAC](https://dev-ujin.github.io/assets/res/MAC.png){: .img01}
 - 상호 비밀키를 알고 두 코드가 동일한 경우
   1. 무결성 확인 가능 : 만약 공격자가 메시지를 변경했다면 계산된 코드 &#8800; 수신한 코드
   2. 인증 가능 : 다른 사람은 비밀키를 모르고, 정확한 코드를 갖는 메시지를 만들어 낼 수 있음
@@ -218,29 +220,30 @@ _____
 
 ##### MAC의 구현 사례
 
-###### 1. 축소 MAC(Nested MAC)
+###### 1. `축소 MAC(Nested MAC)`
 - MAC의 안전성을 높이기 위해서 설계
-![축소 MAC](https://dev-ujin.github.io/assets/res/Nested_MAC.png)
 
-###### 2. HMAC(Hash MAC)
+![축소 MAC](https://dev-ujin.github.io/assets/res/Nested_MAC.png){: .img01}
+
+###### 2. `HMAC(Hash MAC)`
 - SHA-1과 같이 **일방향 해시함수를 이용**하여 메시지 인증코드를 구성하는 방법
 - 사용하는 일방향 해시함수는 여러 종류일 수 있음
 - RFC 2104로 출판되었음
 - **TLS(Transport Layer Security), IPSec(IP Security), SET(Secure Electronic Transaction)같은 프로토콜에 이용**
 
-###### 3. CBC-MAC, CMAC
+###### 3. `CBC-MAC, CMAC`
 - 대칭키 암호시스템에 대한 암포 블록체인코드(CBC)와 유사한 방법
 - 대칭키 암호를 N번 사용하여 N개의 평문블록에서 '하나의' MAC을 생성하는 차이가 있음
 - CBC-MAC에서 보안 논점이 발견되어 CMAC(Cipher-based MAC)이 만들어졌음
   - 같은 종류의 데이터 인증과 무결성을 제공하지만 수학적으로는 보다 안전함
 
-###### 4. CCM(Counter with CBC-MAC)
+###### 4. `CCM(Counter with CBC-MAC)`
 - CTR과 CBC-MAC을 통합한 모드
 - 목적 : 동일한 키의 사용을 통해**기밀성과 인증(무결성)**을 제공
 - 핵심 알고리즘 구성요소 : **AES 암호 알고리즘, CTR 운용모드, CBC-MAC 인증 알고리즘**
   - 암호화와 MAC 알고리즘에 **동일한 키 하나가 사용됨**
  
-###### 5. GCM모드(Galois/Counter 모드)
+###### 5. `GCM모드(Galois/Counter 모드)`
 - CTR 모드에 인증 기능을 추가한 모드
 - CTR 모드가 암호문을 생성함과 동시에 이 암호문이 올바른 암호화를 거쳐 만들어진 것임을 인증하는 정보(인증자)를 만들어내는 구조
 - 적극적 공격자가 암호문을 위조하여 배포해도 위조된 암호문임을 간파할 수 있음
@@ -249,21 +252,21 @@ _____
 - 재전송 공격 : 단순한 메시지 인증코드는 공격자의 재전송공격을 방지할 수 없음
   - 공격자가 전송 중인 메시지와 메시지 인증코드를 스니핑해 재전송하는 경우
 
-###### 1. 순서번호(sequence number)
+###### 1. `순서번호(sequence number)`
 - 송신 메시지에 매회 1회씩 증가하는 번호를 붙여 **MAC값의 계산에서도 순서번호를 메시지에 포함시키는 방법**
 - 맬로리가 순서 번호를 늘렸을 때의 MAC값을 계산할 수 없게 됨
 - **통신 상대마다 마지막 순서번호를 기록해두어야하는 번거로움이 있음**
 
-###### 2. 타임스탬프(Timestamp)
+###### 2. `타임스탬프(Timestamp)`
 - **송신 메시지에 현재 시각을 넣어**, 그 이전의 메시지가 왔을 경우에는 MAC값이 바르더라도 오류라고 판단
 - **송, 수신자 사이에 시계를 일치시켜두는 동기화가 필요**
 
-###### 3. 비표(nounce)
+###### 3. `비표(nounce)`
 - 메시지 수신에 앞서 **수신자가 송신자에게 일회용 랜덤 값(비표)을 건넴**
 - **비표를 포함해 MAC값을 계산**
 - **통신 데이터의 양이 약간 증가함**
 
-###### 4. 시도/응답(Chanllenge/Response)
+###### 4. `시도/응답(Chanllenge/Response)`
 - **B가 A에게 우선 난수(신청)를 송신한 다음, A로부터 송신 이후에 수신되는 메시지(응답)가 정확한 난수값을 포함할 것을 요구함**
 
 ##### MAC으로 해결할 수 없는 문제
