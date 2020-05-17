@@ -24,25 +24,11 @@ tags: SpringBoot JPA 실전스프링부트와JPA의활용1
 #### 프로젝트 시작하기
 ##### 프로젝트 설정
 - [스프링 부트 스타터](https://start.spring.io/)를 사용하면 프로젝트 환경설정을 쉽게 설정할 수 있음
-- Project : Gradle Project
-- Language : Java
-- Spring Boot : 2.1.13
-- Project Metadata
-  - Group : jpabook
-  - Artifact : jpashop
-  - Name : jpashop
-  - Description : Demo project for Spring Boot
-  - Package name : jpabook.jpashop
-  - Packaging : jar
-  - Java : 8
-- Dependencies에는 아래 5가지를 추가
-  - Spring Web
-  - Thymeleaf
-  - Spring Data JPA
-  - H2 Database
-  - Lombok
+
+![스프링 부트 스타터 설정화면](https://dev-ujin.github.io/_site/assets/res/../../../../../../assets/res/Spring_Initializer_Setting.png){: .img01}
+
 - GENERATE를 눌러 다운로드 받음
-- build.gradle파일을 보면 프로젝트 설정 요소들을 볼 수 있음
+- `build.gradle`파일을 보면 프로젝트 설정 요소들을 볼 수 있음
 
 ##### 프로젝트 불러오기
 - intelliJ실행 > import project > 프로젝트의 build.gradle파일 선택
@@ -55,6 +41,12 @@ tags: SpringBoot JPA 실전스프링부트와JPA의활용1
 2020-03-30 20:41:44.701  INFO 17176 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
 ```
 
+- IntelliJ 최근 버전에서는 Gradle로 실행하는 것이 기본 설정 -> 실행 속도가 느림 
+- 아래와 같이 설정을 변경하면 Java로 바로 실행해서 실행 속도가 빨라짐
+
+![실행 방법 설정 변경](https://dev-ujin.github.io/_site/assets/res/../../../../../../assets/res/Run_Setting.png)
+
 ##### lombok 설치와 설정
 - intelliJ > Settings > Plugins에서 lombok 설치
 - Settings > Compiler > Annotation Processor > enable annotation processing에 반드시 체크
+
