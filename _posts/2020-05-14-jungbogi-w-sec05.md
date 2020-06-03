@@ -3,7 +3,7 @@ layout: post
 title:  "[정보보안기사/필기]05. 해시함수와 응용"
 date:   2020-05-17 17:47:00 0800
 categories: 정보보안기사필기
-tags: 정보보안 정보보호일반 암호학
+tags: 정보보안 정보보호일반
 ---
 > 알기사 교재의 'section 05. 해시함수와 응용'을 공부한 내용을 바탕으로 작성하였습니다.
 
@@ -204,7 +204,7 @@ _____
 ##### `변경감지코드(MDC, Modification Detection Code)`
 - **키가 없는 해시함수**
 
-![MDC](https://dev-ujin.github.io/assets/res/MAC.png){: .img01}
+![MDC](https://dev-ujin.github.io/assets/res/MDC.png){: .img01}
 
 ##### `메시지인증코드(MAC, Message Authentication Code)`
 - **키가 있는 해시함수**
