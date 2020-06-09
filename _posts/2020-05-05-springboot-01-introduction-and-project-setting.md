@@ -274,10 +274,7 @@ public class MemberRepositoryTest {
 public void $NAME$() throws Exception {
     //given
     $END$
-    
     //when
-    
-    
     //then
 }
 ```
