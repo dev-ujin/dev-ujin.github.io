@@ -14,7 +14,7 @@ tags: JPA 자바ORM표준JPA프로그래밍
 </style>
 
 #### JPA 동작
-![JPA 위치](http://dev-ujin.github.io/_site/assets/res/jpa_position.png){: .img01}
+![JPA 위치](http://dev-ujin.github.io/assets/res/jpa_position.png){: .img01}
 
 #### JPA 표준 명세
 - JPA는 인터페이스의 모음
