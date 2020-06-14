@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[JPA]01.JPA를 사용해야하는 이유2"
+title:  "[JPA]02.JPA를 사용해야하는 이유2"
 date:   2020-06-09 21:44:00 0800
 categories: JPA
 tags: JPA 자바ORM표준JPA프로그래밍

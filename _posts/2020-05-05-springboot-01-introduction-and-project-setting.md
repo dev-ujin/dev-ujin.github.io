@@ -3,7 +3,7 @@ layout: post
 title:  "01.프로젝트 환경설정"
 date:   2020-05-05 03:17:00 0800
 categories: SpringBoot
-tags: SpringBoot JPA 실전스프링부트와JPA의활용1
+tags: SpringBoot JPA 실전스프링부트와JPA의활용1d
 ---
 > 김영한님의 강의를 듣고 공부한 내용을 바탕으로 작성하였습니다.
 
