@@ -1,8 +1,6 @@
 ---
 ---
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap')
-@import url("https://googledrive.com/host/0BxmAw3HA4YGCfkpJRUw0RGNraDFnVzRFdjhaQnRFQ3BzZ00tRFZobGlKcmprb1hiSUFvZkE/nanumbarunpenr.css")
-@import url("https://googledrive.com/host/0BxmAw3HA4YGCfnE1U2tYVjN2UkVLWnEzaVdsWDRUZ3VFbmpJckF3UG56WkpLSUxKMXFaTlU/nanumbarunpenb.css")
 
 @mixin transition($args...)
   -webkit-transition: $args
@@ -14,10 +12,6 @@
 
 
 main
-  .container
-    .row
-      font-family: NanumBarunpenr
-
   div
     .divider
       margin: 10px 0
@@ -86,26 +80,27 @@ main
 
 
 .col.s12
+  font-family: "NanumBarunpenr"
   h1, h2, h3, h4, h5, h6
     font-weight: 700
   h1
-    font-size: 2.5em
-  h2
-    font-size: 2.3em
-  h3
-    font-size: 2.0em
-  h4
-    font-size: 1.7em
+    font-size: 2em !important
     margin-top: 50px
     color: #8671b8
-  h5
-    font-size: 1.5em
+  h2
+    font-size: 1.5em !important
     margin-top: 50px
     margin-bottom: 20px
-  h6
-    font-size: 1.3em
+  h3
+    font-size: 1.17em !important
     margin-top: 40px
     margin-bottom: 10px
+  h4
+    font-size: 1em !important
+  h5
+    font-size: .83em !important
+  h6
+    font-size: .67em !important
 
   .language-plaintext.highlighter-rouge
     background-color: #8671b8b2
