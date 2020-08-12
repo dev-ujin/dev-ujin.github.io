@@ -225,6 +225,7 @@ net use 드라이브명: \\ip\설정대상드라이브$
 - 이 데이터베이스는 네트워크 리소스를 정리하고 사용자 접근 통제 기능을 수행하는 디렉터리 서비스인 **AD**를 실행함
 
 <style>
+td {text-align: center;}
 #one {width: 18%;}
 #two {width: 25%;}
 #three {width: 20%;}

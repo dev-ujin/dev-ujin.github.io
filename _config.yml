@@ -21,6 +21,7 @@ url: "https://dev-ujin.github.io"
 permalink: /:year/:month/:day/:title
 repository: dev-ujin/dev-ujin.github.io
 paginate: 5
+toc: true
 
 # MatJek specific configurations
 github_profile: "https://github.com/dev-ujin"
