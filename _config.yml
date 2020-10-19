@@ -45,3 +45,5 @@ exclude:
 sass:
   style: compressed
 future: true
+gems:
+- jemoji
