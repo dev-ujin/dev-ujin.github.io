@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Github::Emoji로 Commit Message 분류하기"
-date:   2020-10-19 14:57:00 0800
+date:   2020-10-20 00:23:00 0800
 categories: Git/Github
 tags: Git
 comments: 1
@@ -12,8 +12,9 @@ comments: 1
 > [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)에서 권장하는 몇가지 사항이 있는데 내 상황에 맞게 조금 변경해보려 한다!
 
 ## My Commit Emoji :full_moon_with_face:
+
 |EMOJI|SYNTAX|DESCRIPTION|
-|---|---|---|
+|:---:|---|---|
 |:tada:|`:tada:`|Initial commit|
 |:penguin:|`:penguin:`|Linux|
 |:apple:|`:apple:`|MacOS|
@@ -38,6 +39,6 @@ comments: 1
 |:page_facing_up:|`:page_facing_up:`|Add code/files|
 |:boom:|`:boom:`|Remove code/files|
 |:pencil2:|`:pencil2:`|Update code/files|
-|:ab:|`:ab:`|Update text and literals|
+|:ab:|`:ab:`|Fix typo|
 
 
