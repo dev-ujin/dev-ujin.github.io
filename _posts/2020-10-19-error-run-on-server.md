@@ -13,10 +13,10 @@ comments: 1
 프로젝트를 실행할 서버를 선택하고 설정해야 하는데 `프로젝트 우클릭 > Run As > Run on Server` 탭이 없음
 
 # 해결 방법
-## Dynamic Web Project가 있는 경우 선택
+## 1) Dynamic Web Project가 있는 경우 선택
 `프로젝트 우클릭 > Properties > Project Facets > Dynamic Web Project` 선택
 
-## Dynamic Web Project가 없는 경우
+## 2) Dynamic Web Project가 없는 경우
 1. `Help > Install New Software > Work with`에 **http://download.eclipse.org/releases/[eclipse-version]**을 입력
 2. **Web, XML, Java EE and OSGi Enterprise Develpment** 선택
 3. 필요한 항목에 체크
