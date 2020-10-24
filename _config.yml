@@ -33,7 +33,8 @@ google_site_verification: "UA-96359860-1"
 disqus_shortname: "manduu"
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -45,5 +46,5 @@ exclude:
 sass:
   style: compressed
 future: true
-gems:
-- jemoji
+
+
