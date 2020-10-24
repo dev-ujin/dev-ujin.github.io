@@ -11,10 +11,10 @@ comments: 1
 > [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)에서 권장하는 몇가지 사항이 있는데 내 상황에 맞게 조금 변경해보려 한다!
 
 ## 문제 발생...&#x1F644;
-![git-commit-messages-with-emoji-01](https://dev-ujin.github.io/assets/res/../../../../../_site/assets/res/git-commit-messages-with-emoji-01.png)
+![git-commit-messages-with-emoji-01](https://dev-ujin.github.io/assets/res/git-commit-messages-with-emoji-01.png){: .img-std}
 본문 왼쪽에 Margin이 생기고 폰트가 모두 흰색으로 바뀌는 현상이 발생했다. 디자인 에러인가 싶어서 css파일을 열심히 봤지만 다른 포스트에서는 문제가 발생하지 않았고 구글링을 해본 결과
 
-![git-commit-messages-with-emoji-02](https://dev-ujin.github.io/assets/res/../../../../../_site/assets/res/git-commit-messages-with-emoji-02.png)
+![git-commit-messages-with-emoji-02](https://dev-ujin.github.io/assets/res/git-commit-messages-with-emoji-02.png){: .img-std}
 [Markdown Guide](https://www.markdownguide.org/tools/jekyll/)에서 Jekyll Markdown에서 복붙 Emoji는 지원하지만 Shortcode Emoji는 지원하지 않는다는 것을 알아냈다. Shortcode를 사용하려면 [jemoji](https://github.com/jekyll/jemoji)를 플러그인해서 사용해야한다.
 
 
@@ -52,6 +52,8 @@ comments: 1
 아래 두 사이트를 참고하면 모든 Emoji를 표현할 수 있다!
 - [https://unicode.org/emoji/charts/full-emoji-list.html](https://unicode.org/emoji/charts/full-emoji-list.html)
 - [https://emojipedia.org/](https://emojipedia.org/)
+
+
 
 
 
