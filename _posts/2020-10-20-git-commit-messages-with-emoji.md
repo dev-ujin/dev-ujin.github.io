@@ -7,6 +7,8 @@ tags: Git
 comments: 1
 ---
 
+> 
+
 > Github을 돌아다니던 중 Emoji가 들어간 귀여운 Commit Message를 발견하였다! 탐난다!
 > [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages)에서 권장하는 몇가지 사항이 있는데 내 상황에 맞게 조금 변경해보려 한다!
 
@@ -17,10 +19,16 @@ comments: 1
 ![git-commit-messages-with-emoji-02](https://dev-ujin.github.io/assets/res/git-commit-messages-with-emoji-02.png){: .img-std}
 [Markdown Guide](https://www.markdownguide.org/tools/jekyll/)에서 Jekyll Markdown에서 복붙 Emoji는 지원하지만 Shortcode Emoji는 지원하지 않는다는 것을 알아냈다. Shortcode를 사용하려면 [jemoji](https://github.com/jekyll/jemoji)를 플러그인해서 사용해야한다.
 
+### Jekyll Markdown에서 Emoji를 사용하기 위한 3가지 방법
+1. copy and paste
+2. unicode로 사용
+3. jemoji 플러그인하고 shortcode로 사용 
+
+나는 포스트에 사용할 때는 2번 방법을 사용하기로 했다.
 
 ## My Commit Emoji &#x1F995;
 
-|Emoji|Syntax for Github|Syntax for Post|DESCRIPTION|
+|Emoji|Shortcode|Unicode|DESCRIPTION|
 |---|---|---|---|
 |&#x1F389;|`tada`|`&#x1F389;`|Initial commit|
 |&#x1F4C4;|`page_facing_up`|`&#x1F4C4;`|Add code/files|
@@ -29,6 +37,7 @@ comments: 1
 |&#x1F18E;|`ab`|`&#x1F18E;`|Fix typo|
 |&#x1F6A7;|`contruction`|`&#x1F6A7;`|Work in progress|
 |&#x1F527;|`wrench`|`&#x1F527;`|Configuration files|
+|&#x1F528;|`hammer`|`&#x1F528;`|Refactor structure|
 |&#x1F69A;|`truck`|`&#x1F69A;`|Move/Rename repository|
 |&#x1F484;|`lipstick`|`&#x1F484;`|Improve UI/Style|
 |&#x1F4A1;|`bulb`|`&#x1F4A1;`|Documentize code|
