@@ -17,7 +17,7 @@ title: 만두의 개발공부
 description: > # this means to ignore newlines until "baseurl:"
 # Material theme based on <a href="http://materializecss.com">Materialize.css</a> for jekyll sites
 baseurl: ""
-url: "https://dev-ujin.github.io"
+url: "https://dev-ujin.github.io/"
 permalink: /:year/:month/:day/:title
 repository: dev-ujin/dev-ujin.github.io
 paginate: 5
@@ -27,7 +27,7 @@ toc: true
 github_profile: "https://github.com/dev-ujin"
 user: "만두 (Manduu)"
 user_email: "dev.ujin518@gmail.com"
-contact_url: "https://docs.google.com/forms/d/e/1FAIpQLSeW5sfpjQ7hLwLg6Vi_bWV4aYNEsnG8a3YlljOf9pxV-SZtmA/viewform?usp=sf_link"
+#contact_url: "https://docs.google.com/forms/d/e/1FAIpQLSeW5sfpjQ7hLwLg6Vi_bWV4aYNEsnG8a3YlljOf9pxV-SZtmA/viewform?usp=sf_link"
 google_tracking_id: "UA-165670992-1"
 google_site_verification: "UA-96359860-1"
 disqus_shortname: "manduu"

@@ -35,7 +35,7 @@ comments: 1
 |&#x1F4A5;|`boom`|`&#x1F4A5;`|Remove code/files|
 |&#x1F6A9;|`triangular_flag_on_post`|`&#x1F6A9;`|Update code/files|
 |&#x1F18E;|`ab`|`&#x1F18E;`|Fix typo|
-|&#x1F6A7;|`contruction`|`&#x1F6A7;`|Work in progress|
+|&#x1F6A7;|`construction`|`&#x1F6A7;`|Work in progress|
 |&#x1F527;|`wrench`|`&#x1F527;`|Configuration files|
 |&#x1F528;|`hammer`|`&#x1F528;`|Refactor structure|
 |&#x1F69A;|`truck`|`&#x1F69A;`|Move/Rename repository|
