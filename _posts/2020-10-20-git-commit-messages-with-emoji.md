@@ -48,6 +48,7 @@ comments: 1
 |&#x2705;|`white_check_mark`|`&#x2705;`|Add/Update a test|
 |&#x2795;|`heavy_plus_sign`|`&#x2795;`|Add dependencies|
 |&#x2796;|`heavy_minus_sign`|`&#x2796;`|Remove dependencies|
+|&#x1F4BE;|`floppy_disk`|`&#x1F4BE;`|Database|
 |&#x1F427;|`penguin`|`&#x1F427;`|Linux|
 |&#x1F34E;|`apple`|`&#x1F34E;`|MacOs|
 |&#x1F3C1;|`chekckered_flag`|`&#x1F3C1;`|Windows|
