@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "01.프로젝트 환경설정"
+title:  "Spring::01.프로젝트 환경설정"
 date:   2020-05-05 03:17:00 0800
-categories: SpringBoot
-tags: SpringBoot JPA 실전스프링부트와JPA의활용1
+categories: Spring
+tags: Spring JPA 실전스프링부트와JPA의활용1
 ---
 > 김영한님의 강의를 듣고 공부한 내용을 바탕으로 작성하였습니다.
 
@@ -98,7 +98,9 @@ gradlew dependencies
 _____
 # View 환경 설정
 ## thymeleaf 템플릿 엔진
+- [thymeleaf 공식 사이트](https://www.thymeleaf.org/)
 - **정적인 템플릿 파일**은 **resources > static**에 만들고, **동적인 템플릿 파일**은 **resources > templates**에 만듦
+- `templates/ + {viewname} + .html`로 만들어 맵핑
 
 ## 실습
 ### HelloController
@@ -121,7 +123,7 @@ public class HelloController {
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'안녕하세요. ' + ${data}" >안녕하세요. 손님</p>
+<p th:text="'안녕하세요. ' + ${data}" >안녕하세요. 손님</p> <!--랜더링하면 data를 받아서 보여주고 순수 html로는 '안녕하세요. 손님'을 화면에 띄움-->
 </body>
 </html>
 ```
