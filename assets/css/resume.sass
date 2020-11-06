@@ -1,0 +1,111 @@
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap')
+
+body 
+    background-image: url("../res/web.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+.panel-main 
+    display: table
+    width: 100%
+    height: 100%
+    //text-align: center
+    background-color: rgba(0, 0, 0, 0.4)
+
+    .panel-content
+        vertical-align: middle
+        display: table-cell
+
+        .panel-content-inner
+            margin: 0 auto
+            padding: 20px
+            border-radius: 15px
+            transition: box-shadow .25s
+            background-color: rgb(255, 255, 255)
+            max-width: 90%
+            min-width: 80%
+            height: auto
+
+            //이력서 헤더
+            .resume-header
+                display: inline-flex
+                width: 100%
+
+                .profile-image
+                    width: 150px
+                    height: 150px
+                    position: relative
+                    border: 1px solid rgba(255, 255, 255, 0.7)
+                    border-radius: 100%
+
+                .name
+                    color: rgba(255, 255, 255, 0.9)
+                    font-family: 'Grandstander', cursive
+                    margin-bottom: 0 !important
+                    text-shadow: -1.5px 0 #271d2e, 0 1.5px #271d2e, 1.5px 0 #271d2e, 0 -1.5px #271d2e         
+            
+            //이력서 본문
+            .resume-body
+                display: inline-flex
+                width: 100%
+
+                .resume-body-left
+                    width: 30%
+                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+                    background-color: #ffffff
+                    padding: 15px
+
+                .resume-body-right
+                    width: 75%
+                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+                    background-color: #ffffff
+                    padding: 15px
+
+                .item
+                    display: block
+                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+                    background-color: #ffffff
+                    border-radius: 16px
+
+
+                    .item-title
+                        font-weight: bold
+                        font-size: 1.5rem
+                        text-align: center
+                        padding: 5px
+                        //border-bottom: 2px solid #271d2e
+                        //background-color: #dee5e7
+
+
+            .knowledge
+                .item-content
+                    max-width: 150px
+                    margin: 0 auto
+
+                    li
+                        display: block
+                        background-color: rgba(39, 29, 46, 0.8)
+                        border-radius: 16px
+                        list-style: none
+                        padding: 10px
+                        margin: 10px 0
+                        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+                        
+
+                        &:hover
+                            background-color: rgba(134, 113, 184, 0.8)
+
+
+                        a
+                            color: #fff
+                            font-weight: bold
+                            text-decoration: none
+                            letter-spacing: 1px
+                        
+                        i
+                            margin-right: 7px
+                            font-size: 25px
+
