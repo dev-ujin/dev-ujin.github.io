@@ -1,9 +1,10 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css2?family=Grandstander&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo&family=Grandstander:wght@100&family=IBM+Plex+Serif:wght@100&family=Xanh+Mono&display=swap')
+
 
 body 
-    background-image: url("../res/web.jpg")
+    background-image: url("../res/portfolio/web.jpg")
     background-position: center
     background-repeat: no-repeat
     background-size: cover
@@ -24,88 +25,172 @@ body
             padding: 20px
             border-radius: 15px
             transition: box-shadow .25s
-            background-color: rgb(255, 255, 255)
+            background-color: rgba(255, 255, 255, 0.7)
             max-width: 90%
             min-width: 80%
             height: auto
+            
+            .download
+                display: block
+                width: auto
+                margin: 0 0
+                padding: 3
+                background-color: rgba(39, 29, 46, 0.8)
+                border-radius: 16px
+                list-style: none
+                padding: 10px
+                margin: 10px 0
+                text-align: center
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+                cursor: pointer
+
+                &:hover
+                    background-color: rgba(134, 113, 184, 0.8)
+
+
+                a
+                    color: #fff
+                    font-weight: bold
+                    text-decoration: none
+                    letter-spacing: 1.5px
+                    
+                i
+                    margin-right: 7px
+                    font-size: 25px
 
             //이력서 헤더
             .resume-header
-                display: inline-flex
+                display: table
+                margin-top: 20
+                //text-align: center
                 width: 100%
-
-                .profile-image
-                    width: 150px
-                    height: 150px
-                    position: relative
-                    border: 1px solid rgba(255, 255, 255, 0.7)
-                    border-radius: 100%
-
-                .name
-                    color: rgba(255, 255, 255, 0.9)
-                    font-family: 'Grandstander', cursive
-                    margin-bottom: 0 !important
-                    text-shadow: -1.5px 0 #271d2e, 0 1.5px #271d2e, 1.5px 0 #271d2e, 0 -1.5px #271d2e         
-            
+                .profile-title
+                    display: table-cell
+                    text-align: center
+                    .name
+                        color: #000
+                        font-family: 'Abril Fatface', cursive
+                        font-size: 50px
+                        font-weight: 800
+                        margin-bottom: 0 !important
+                        //text-shadow: -1.5px 0 #271d2e, 0 1.5px #271d2e, 1.5px 0 #271d2e, 0 -1.5px #271d2e         
+                    .objective
+                        display: block
+                        font-family: 'Archivo', sans-serif
+                        font-size: 1.3rem
+                        max-width: 80%
+                        margin: 0 auto
             //이력서 본문
             .resume-body
                 display: inline-flex
-                width: 100%
+                width: 100% 
 
                 .resume-body-left
-                    width: 30%
-                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
-                    background-color: #ffffff
-                    padding: 15px
+                    width: 35%
+                    padding: 5px
 
+                    .contact
+                        .item
+                            text-align: center
+                        .contact-icon
+                            margin: 0 5px
+                            display: inline-block
+                            font-size: 1.3rem
+
+                    .language
+                        .item
+                            li
+                                text-align: center
+                            .item-content-list
+                                display: inline-flex
+                                .language-image
+                                    width: 60px
+                                    height: 50px
+                                .level
+                                    font-size: 1rem
+                                    line-height: 3.5rem
+                            .caption
+                                font-size: 1rem
+                                font-family: 'Archivo', sans-serif
+                        
+
+                //공통 부분
                 .resume-body-right
-                    width: 75%
-                    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
-                    background-color: #ffffff
-                    padding: 15px
+                    width: 65%
+                    padding: 5px
+                    .item
+                        padding: 15 0
+                        .item-content
+                            display: inline-flex
+                            .item-content-left
+                                display: block
+                                width: 25%
+                                font-size: 1rem
+                                font-style: italic
+                                padding: 5 3
+                            .item-content-right
+                                display: block
+                                width: 75%
+                                .item-title
+                                    font-size: 1.5rem
+                                    font-weight: 700
+                                    font-familiy: 'Xanh Mono', monospace
+                    .skill
+                        .skill-image
+                            display: inline-table
+                            background-position: center
+                            background-repeat: no-repeat
+                            background-size: cover
+                            width: 80px
+                            height: 80px
+                            border-radius: 20px 20px
+                            margin: 3px
+                            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
 
-                .item
+                            &:hover
+                                .skill-label
+                                    visibility: visible
+
+                            .skill-label
+                                width: 80px
+                                height: 80px
+                                visibility: hidden
+                                background-color: rgba(0,0,0,0.8)
+                                border-radius: 20px 20px
+                                color: #ffffff
+                                padding: 10px
+                                align-items: center
+                                text-align: center
+                                font-size: 0.9rem
+                    
+
+
+                //공통부분
+                .category
                     display: block
                     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
                     background-color: #ffffff
                     border-radius: 16px
-
-
-                    .item-title
+                    padding: 10px
+                    margin: 15 5
+                    .category-title
                         font-weight: bold
                         font-size: 1.5rem
                         text-align: center
-                        padding: 5px
+                        font-family: 'Abril Fatface', cursive
+                        margin: 10 0
                         //border-bottom: 2px solid #271d2e
                         //background-color: #dee5e7
 
-
-            .knowledge
-                .item-content
-                    max-width: 150px
-                    margin: 0 auto
-
-                    li
+                    .item-container
                         display: block
-                        background-color: rgba(39, 29, 46, 0.8)
-                        border-radius: 16px
-                        list-style: none
-                        padding: 10px
-                        margin: 10px 0
-                        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
-                        
+                        font-size: 1.2rem
+                        font-align: center
+                        .item-content
+                            font-family: 'Archivo', sans-serif
+                            width: 100%
 
-                        &:hover
-                            background-color: rgba(134, 113, 184, 0.8)
+                
+                            
 
-
-                        a
-                            color: #fff
-                            font-weight: bold
-                            text-decoration: none
-                            letter-spacing: 1px
-                        
-                        i
-                            margin-right: 7px
-                            font-size: 25px
 
