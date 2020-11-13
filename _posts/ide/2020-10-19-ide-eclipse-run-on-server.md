@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[IDE]Eclipse::Run on Server 활성화"
-date:   2020-10-19 12:58:00 0800
+title: "[IDE]Eclipse::Run on Server 활성화"
+date: 2020-10-19 12:58:00 0800
 categories: IDE
 tags: eclipse server
 comments: 1

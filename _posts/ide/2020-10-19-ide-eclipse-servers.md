@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Eclipse::Servers 탭 활성화"
-date:   2020-10-19 13:04:00 0800
+title: "[IDE]Eclipse::Servers 탭 활성화"
+date: 2020-10-19 13:04:00 0800
 categories: IDE
 tags: eclipse server
 comments: 1

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[IDE]Eclipse::Server Locations 활성화"
-date:   2020-10-19 15:45:00 0800
+title: "[IDE]Eclipse::Server Locations 활성화"
+date: 2020-10-19 15:45:00 0800
 categories: IDE
 tags: eclipse server
 comments: 1

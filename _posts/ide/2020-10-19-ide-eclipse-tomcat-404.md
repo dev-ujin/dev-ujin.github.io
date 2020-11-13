@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[IDE]Eclipse::Tomcat연동 - HTTP Status 404"
-date:   2020-10-19 14:57:00 0800
+title: "[IDE]Eclipse::Tomcat연동 - HTTP Status 404"
+date: 2020-10-19 14:57:00 0800
 categories: IDE
 tags: eclipse server tomcat
 comments: 1

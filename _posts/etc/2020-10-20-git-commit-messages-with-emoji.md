@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Github::Emoji로 Commit Message 분류하기"
-date:   2020-10-20 00:23:00 0800
+title: "[Git]Emoji로 Commit Message 분류하기"
+date: 2020-10-20 00:23:00 0800
 categories: Git/Github
 tags: Git
 comments: 1
