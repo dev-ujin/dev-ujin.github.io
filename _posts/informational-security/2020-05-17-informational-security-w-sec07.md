@@ -54,7 +54,7 @@ _____
 2. **예측 불가능성** : 과거의 수열로부터 다음 수를 예측할 수 없다는 성질
 3. **재현 불가능성** : 같은 수열을 재현할 수 없다는 성질
 
-![난수의 성질](../../assets/res/informational-security/feature-of-random-number.png)
+![난수의 성질](../assets/res/informational-security/feature-of-random-number.png)
 
 ## 의사난수 생성기
 - `난수생성기(RNG, Random Number Generator)` : **자연 현상**을 센서로 감지해서 그 결과를 기초로 난수열을 생성하는 **하드웨어**

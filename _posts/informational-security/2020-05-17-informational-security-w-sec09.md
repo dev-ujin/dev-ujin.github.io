@@ -18,7 +18,7 @@ _____
 - 정당한 가입자의 접속인가를 확인하기 위한 인증
 - 개인식별과의 차이점
 
-![사용자 인증과 개인 식별](../../assets/res/informational-security/personal-identification.png)
+![사용자 인증과 개인 식별](../assets/res/informational-security/personal-identification.png)
 
 - 사용자 인증의 경우에는 B가 다른 제 3자 D에게 A로 가장할 수 있음
 

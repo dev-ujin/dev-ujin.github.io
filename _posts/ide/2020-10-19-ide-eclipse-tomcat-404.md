@@ -11,7 +11,7 @@ comments: 1
 
 # 문제 상황
 Tomcat 서버 설정을 하고 실행했는데 HTTP Status 404 에러가 발생!
-![http status 404](https://dev-ujin.github.io/assets/res/ide/tomcat-404-05.png)
+![http status 404](../assets/res/ide/tomcat-404-05.png)
 
 # 해결 방법
 ## 우선...
@@ -29,15 +29,15 @@ Tomcat 서버 설정을 하고 실행했는데 HTTP Status 404 에러가 발생!
 
 > localhost:8080에서 에러가 발생하지 않고 tomcat에 대한 설명과 호랑이 이미지가 나오면 서버가 프로젝트의 파일을 읽어들여 정상적으로 연동이 된 상태이다. 
 
-![tomcat](../../assets/res/ide/tomcat-404-04.png)
+![tomcat](../assets/res/ide/tomcat-404-04.png)
 
 - 프로젝트명까지 들어왔을 때 에러가 발생한다면 **index파일의 경로를 확인**해볼 것: `프로젝트명 우클릭 > Properties > Deployment Assembly`
 - Source에 webapp과 WebContent가 둘 다 기본 Path('/')로 추가되어 있는지 확인
-![index파일의 경로](../../assets/res/ide/tomcat-404-02.png)
+![index파일의 경로](../assets/res/ide/tomcat-404-02.png)
 
 > 프로젝트 폴더에서 webapp폴더나 WebContent폴더에 html파일 혹은 jsp파일을 불러와서 띄우는데 index.jsp파일은 webapp밑에 있는데 내 설정에는 WebContent만 추가되어 있어서 계속 에러가 났던 것이었다.
 
 
 ### 반갑다! Hello World!
-![Hello World](../../assets/res/ide/tomcat-404-03.png)
+![Hello World](../assets/res/ide/tomcat-404-03.png)
 

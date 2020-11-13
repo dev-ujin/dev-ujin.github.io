@@ -44,7 +44,7 @@ _____
 
 
 ## 정보보호 대책
-![정보보호 대책](../../assets/res/informational-security/information-protection-measures.png)
+![정보보호 대책](../assets/res/informational-security/information-protection-measures.png)
 
 1. `관리적 보호대책` : 법, 제도, 규정, 교육, 위험분석 및 보안감사
 2. `물리적 보호대책` : 자연재해 대책, 출입통제, 시건(잠금)장치
