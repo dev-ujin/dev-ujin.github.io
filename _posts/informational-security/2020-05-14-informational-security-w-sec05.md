@@ -168,10 +168,10 @@ _____
 _____
 ## SHA-512
 ### 구조
-![SHA-512구조](../assets/res/informational-security/sha512-structure.png)
+![SHA-512구조](http://dev-ujin.github.io/assets/res/informational-security/sha512-structure.png)
 
 ### 길이필드와 패딩
-![SHA-512길이필드와 패딩](../assets/res/informational-security/sha512-length-padding.png)
+![SHA-512길이필드와 패딩](http://dev-ujin.github.io/assets/res/informational-security/sha512-length-padding.png)
 - 길이필드 : 부호 없는 정수로, 해시값이 같으면서 입력값이 다른 메시지를 찾는 것을 어렵게 함 
 
 ### 안전성
@@ -190,12 +190,12 @@ _____
 ## `변경감지코드(MDC, Modification Detection Code)`
 - **키가 없는 해시함수**
 
-![MDC](../assets/res/informational-security/mdc.png)
+![MDC](http://dev-ujin.github.io/assets/res/informational-security/mdc.png)
 
 ## `메시지인증코드(MAC, Message Authentication Code)`
 - **키가 있는 해시함수**
 
-![MAC](../assets/res/informational-security/mac.png)
+![MAC](http://dev-ujin.github.io/assets/res/informational-security/mac.png)
 - 상호 비밀키를 알고 두 코드가 동일한 경우
   1. 무결성 확인 가능 : 만약 공격자가 메시지를 변경했다면 계산된 코드 &#8800; 수신한 코드
   2. 인증 가능 : 다른 사람은 비밀키를 모르고, 정확한 코드를 갖는 메시지를 만들어 낼 수 있음
@@ -209,7 +209,7 @@ _____
 ### 1. `축소 MAC(Nested MAC)`
 - MAC의 안전성을 높이기 위해서 설계
 
-![축소 MAC](../assets/res/informational-security/nested-mac.png)
+![축소 MAC](http://dev-ujin.github.io/assets/res/informational-security/nested-mac.png)
 
 ### 2. `HMAC(Hash MAC)`
 - SHA-1과 같이 **일방향 해시함수를 이용**하여 메시지 인증코드를 구성하는 방법
