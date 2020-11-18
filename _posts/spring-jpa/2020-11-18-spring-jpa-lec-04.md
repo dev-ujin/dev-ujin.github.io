@@ -16,6 +16,7 @@ _____
 ## Repository 개발
 - Repository class 앞에 `@Repository`
 - Repository class 내부에 EntityManager 선언
+
 ```java
 @PersistenceContext
 private EntityManager em;
@@ -23,11 +24,11 @@ private EntityManager em;
 //혹은 EntityManagerFactory 직접 주입도 가능
 @PersistenceUnit
 private EntityManagerFactory emf;
-
 ```
 
 ### &#127772; Tip : IntelliJ 단축키
 - inline : `Ctrl + Alt + N`
+
 ```java
 List<Member> result = em.createQuery("select m from Member m", Member.class).getResultList();
 return result;
@@ -48,6 +49,7 @@ return em.createQuery("select m from Member m", Member.class).getResultList();
 2. 메서드 주입
 3. 생성자 주입(권장)
 4. Lombok `@RequiredArgsConstructor` : final로 되어 있는 변수만 생성자로 만들어줌
+
 ```java
 // 1. 필드 주입
 @Autowired
@@ -98,6 +100,7 @@ public class MemberRepository {
 - `test/resources/application.yml`을 따로 만들어 test용 환경을 설정(`url: jdbc:h2:mem:test`)
 - test할 때에는 main이 아닌 test에서의 application.yml파일이 우선권을 가짐
 - Springboot는 별도의 설정이 없으면 default로 메모리용 데이터베이스를 사용하기 때문에 아래와 같이 설정을 생략해도 같은 결과를 가짐
+
 ```
 // test/resources/application.yml
 // 나머지 설정은 생략해도 됨
