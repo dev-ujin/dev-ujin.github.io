@@ -13,7 +13,7 @@ comments: 1
 > Windows에서의 해결방법이다.
 
 # 에러메시지
-```
+```html
 Web server failed to start. Port 8080 was already in use.
 ```
 
@@ -26,7 +26,7 @@ Web server failed to start. Port 8080 was already in use.
    - 옵션 n : 주소와 포트 번호를 숫자 형식으로 표시
    - 옵션 o : 각 연결의 소유자 프로세스 ID를 표시
 3. 해당 포트에 사용중인 pid를 찾는다.
-```
+```html
 프로토콜  로컬 주소              외부 주소              상태            PID
 ...
  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       29692
@@ -34,6 +34,6 @@ Web server failed to start. Port 8080 was already in use.
 ```
 4. `taskkill -f /pid [pid]` 명령으로 프로세스를 kill한다.
    - 옵션 f : 강제 종료
-```
+```html
 taskkill -f /pid 29692
 ```
