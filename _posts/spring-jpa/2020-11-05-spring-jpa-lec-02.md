@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring+JPA]간단한 쇼핑몰::02.도메인 분석 설계"
+title: "[Spring+JPA]온라인 서점 만들기::02.도메인 분석 설계"
 date: 2020-11-05 15:40:00 0800
 categories: Spring+JPA
 tags: Spring JPA 실전스프링부트와JPA의활용1

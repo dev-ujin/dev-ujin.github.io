@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring+JPA]간단한 쇼핑몰::03.어플리케이션 아키텍처"
+title: "[Spring+JPA]온라인 서점 만들기::03.어플리케이션 아키텍처"
 date: 2020-11-06 11:17:00 0800
 categories: Spring+JPA
 tags: Spring JPA 실전스프링부트와JPA의활용1

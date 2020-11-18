@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring+JPA]간단한 쇼핑몰::04.Repository/Service/Test 작성시 주의점"
+title: "[Spring+JPA]온라인 서점 만들기::04.Repository/Service/Test 작성시 주의점"
 date: 2020-11-18 08:31:00 0800
 categories: Spring+JPA
 tags: Spring JPA 실전스프링부트와JPA의활용1
