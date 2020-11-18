@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Spring+JPA]간단한 쇼핑몰::01.프로젝트 환경설정"
+title: "[Spring+JPA]온라인 서점 만들기::01.프로젝트 환경설정"
 date: 2020-11-03 03:17:00 0800
 categories: Spring+JPA
 tags: Spring JPA 실전스프링부트와JPA의활용1
