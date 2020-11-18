@@ -10,6 +10,8 @@ comments: 1
 
 > 김영한님의 [실전스프링부트와JPA의활용1](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1)
 
+# 어플리케이션 아키텍처
+_____
 ## 계층형 구조
 - Controller, Web : 웹 계층
 - Sservice : 비지니스 로직, 트랜잭션 처리
@@ -30,5 +32,3 @@ comments: 1
 3. Web 계층에 적용
 4. API 개발
 5. 성능 최적화
-
-
