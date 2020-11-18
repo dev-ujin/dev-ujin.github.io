@@ -101,7 +101,7 @@ public class MemberRepository {
 - test할 때에는 main이 아닌 test에서의 application.yml파일이 우선권을 가짐
 - Springboot는 별도의 설정이 없으면 default로 메모리용 데이터베이스를 사용하기 때문에 아래와 같이 설정을 생략해도 같은 결과를 가짐
 
-```
+```html
 // test/resources/application.yml
 // 나머지 설정은 생략해도 됨
 logging:
