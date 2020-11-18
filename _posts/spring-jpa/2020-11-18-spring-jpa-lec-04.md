@@ -82,7 +82,7 @@ public class MemberRepository {
 
 
 ## Test 코드 작성
-> Junit4를 사용했음
+> JUnit4를 사용했음
 
 - Test class 앞에 `@Runwith(SpringRunner.class)` : JUnit과 Spring을 엮어서 테스트
 - Test class 앞에 `@SpringBootTest`
