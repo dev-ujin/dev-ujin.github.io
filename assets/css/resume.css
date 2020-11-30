@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo&family=Grandstander:wght@100&family=IBM+Plex+Serif:wght@100&family=Xanh+Mono&display=swap");
 
-
-
 .panel-content-inner {
 	background-color: rgba(255, 255, 255, 0.7);
 	max-width: 90%;
@@ -16,7 +14,9 @@
 	cursor: pointer;
 }
 
-.download {float:right;}
+.download {
+	float:right;
+}
 
 .resume-header {
 	display: table;
