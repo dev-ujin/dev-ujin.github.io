@@ -62,16 +62,17 @@
 }
 
 .project-image {
-    margin: 1.5rem 0;
+	margin: 1.5rem 0;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 .project-image img{
     width: 100%;
-
 }
 .name {
     font-family: 'Abril Fatface', cursive !important;
-    font-size: 1.8rem !important;
+	font-size: 1.8rem !important;
+	font-weight: 750;
 }
 .description {
     font-style: italic;
@@ -91,15 +92,16 @@
 
 .source {background-color: #838383;}
 .demo {border: 1px solid #dee5e7;}
-.source i {color: #ffffff;}
-.demo i {color: #000000;}
+.source i, .source a {color: #ffffff;margin-right: 0.5rem;}
+.demo i, .demo a {color: #000000;margin-right: 0.5rem;}
 .source:hover, .demo:hover {background-color: #242424;}
-.source:hover i, .demo:hover i {color: #ffffff;}
+.source:hover i, .source:hover a, .demo:hover i, .demo:hover a{color: #ffffff;}
 
 .feature {
     list-style: none;
     margin: 1.0rem 0;
 }
+
 .tech-image {
     display: inline-table;
 	background-position: center;
