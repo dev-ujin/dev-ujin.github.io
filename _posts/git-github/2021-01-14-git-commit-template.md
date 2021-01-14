@@ -15,8 +15,18 @@ comments: 1
 Git은 `Commit Template`을 제공하는데 Template을 한 번 만들어두면 Commit시에 양식을 자동으로 띄울 수 있는 기능이다. Repository마다 다르게 설정할 수 있어서 굳굳👍
 
 # 👩‍🎨 Commit Template 만드는 방법
-## 1. Commit Template 파일 생성하기
+### 1. Git 기본 설정에 Commit Template 등록
 모든 Repository에서 공통으로 사용할 Template인지 현재 Repository에서만 사용할 Template인지에 따라 파일 생성 위치가 달라진다.
+```
+// 모든 Repository에 공통으로 사용할 경우
+git config --global commit.template ~/.gitmessage
+
+// 현재 Repository에서만 별도로 사용할 경우
+git config commit.template <Repository경로>/.git/gitmessage
+```
+
+## 2. Commit Template 파일 생성하기
+파일의 생성 위치가 다르기 때문에 1번 과정에서와 마찬가지로 두가지 경우로 나뉜다.
 ```
 // 모든 Repository에 공통으로 사용할 경우
 vi ~/.gitmessage
@@ -25,7 +35,7 @@ vi ~/.gitmessage
 vi .git/gitmessage
 ```
 
-## 2. Commit Template 채우기
+## 3. Commit Template 채우기
 다른 개발자 분들의 글을 참고해서 템플릿 틀을 잡고 기존에 Commit에 사용하던 Emoji도 같이 첨부하였다.
 ```
 # [<type>] <subject>
@@ -55,16 +65,6 @@ vi .git/gitmessage
 # * Separate subject from body with a blank line
 # * Use the body to explain what and why rather than how
 # * Can use multiple lines with "-" or "*" for bullet points in body
-```
-
-### 3. Git 기본 설정에 Commit Template 등록
-파일의 생성 위치가 다르기 때문에 1번 과정에서와 마찬가지로 두가지 경우로 나뉜다. 
-```
-// 모든 Repository에 공통으로 사용할 경우
-git config --global commit.template ~/.gitmessage
-
-// 현재 Repository에서만 별도로 사용할 경우
-git config commit.template <Repository경로>/.git/gitmessage
 ```
 
 # 👩‍🎨 Commit Template 사용 방법
