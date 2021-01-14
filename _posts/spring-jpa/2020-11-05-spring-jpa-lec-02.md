@@ -39,6 +39,7 @@ _____
  
 ### 내장타입
 - 예 : Member와 Address(city, street, zipcode)
+
 ```java
 @Embeddable // 어딘가 내장될 수 있음 - Address class
 @Embedded // 내장된 컬럼임을 명시 - Member의 address column
@@ -47,6 +48,7 @@ _____
 ### 참조 관계
 - 연관관계의 주인은 FK(Foreign key)가 가까운 쪽으로 선택
 - 예 : Member와 Order의 관계에서 연관관계의 주인은 Order
+
 ```java
 @ManyToOne
 @JoinColumn(name = "[조인 컬럼명]")
@@ -69,11 +71,12 @@ _____
 - Enum type 컬럼 앞에 명시
 ```java
 @Enumerated(EnumType.STRING) //STRING으로 선택해야 나중에 선택지가 늘어날 시 확장이 가능함
-
 ```
+
 ## 연관관계 메서드
 - 양방향 관계에서 편의를 위해 작성하는 메서드
 - 예
+
 ```java
 // 주문이 생성되면 양방향에 설정해줘야 함
 member.getOrders().add(order);
