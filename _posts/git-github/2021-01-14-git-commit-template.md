@@ -17,7 +17,7 @@ Git은 `Commit Template`을 제공하는데 Template을 한 번 만들어두면 
 # 👩‍🎨 Commit Template 만드는 방법
 ## 1. Git 기본 설정에 Commit Template 등록
 모든 Repository에서 공통으로 사용할 Template인지 현재 Repository에서만 사용할 Template인지에 따라 파일 생성 위치가 달라진다.
-```
+```bash
 // 모든 Repository에 공통으로 사용할 경우
 git config --global commit.template ~/.gitmessage
 
@@ -27,7 +27,7 @@ git config commit.template <Repository경로>/.git/gitmessage
 
 ## 2. Commit Template 파일 생성하기
 파일의 생성 위치가 다르기 때문에 1번 과정에서와 마찬가지로 두가지 경우로 나뉜다.
-```
+```bash
 // 모든 Repository에 공통으로 사용할 경우
 vi ~/.gitmessage
 
@@ -37,7 +37,7 @@ vi .git/gitmessage
 
 ## 3. Commit Template 채우기
 다른 개발자 분들의 글을 참고해서 템플릿 틀을 잡고 기존에 Commit에 사용하던 Emoji도 같이 첨부하였다.
-```
+```bash
 # [<type>] <subject>
 | =========== Subject 50 Characters ============ |
 # Example : [feat] Implement login
@@ -68,7 +68,7 @@ vi .git/gitmessage
 ```
 
 # 👩‍🎨 Commit Template 사용 방법
-```
+```bash
 git commit
 ```
 템플릿을 채우고 `ZZ`(vi편집기 : 저장 후 종료) 혹은 `:wq!`(vi편집기 : 강제 저장 후 종료)로 저장한다.
