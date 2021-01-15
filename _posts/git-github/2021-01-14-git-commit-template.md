@@ -15,7 +15,7 @@ comments: 1
 Git은 `Commit Template`을 제공하는데 Template을 한 번 만들어두면 Commit시에 양식을 자동으로 띄울 수 있는 기능이다. Repository마다 다르게 설정할 수 있어서 굳굳👍
 
 # 👩‍🎨 Commit Template 만드는 방법
-### 1. Git 기본 설정에 Commit Template 등록
+## 1. Git 기본 설정에 Commit Template 등록
 모든 Repository에서 공통으로 사용할 Template인지 현재 Repository에서만 사용할 Template인지에 따라 파일 생성 위치가 달라진다.
 ```
 // 모든 Repository에 공통으로 사용할 경우

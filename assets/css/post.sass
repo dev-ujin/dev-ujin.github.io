@@ -1,6 +1,7 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap')
 
 @mixin transition($args...)
   -webkit-transition: $args
@@ -17,11 +18,10 @@ main
       margin: 10px 0
 
     &.highlighter-rouge
-      margin-top: 10px
-      margin-bottom: 10px
+      margin: 10px
       
       pre
-        padding: 1rem
+        padding: 0 5px
 
   figure
     &.highlight
@@ -81,39 +81,38 @@ main
 
 
 .col.s12
-  font-family: "NanumBarunpenr"
+  font-family: 'Noto Sans KR', sans-serif
   h1, h2, h3, h4, h5, h6
     font-weight: 700
   h1
-    font-size: 1.7em !important
+    font-size: 2.2rem !important
     margin-top: 60px
-    color: #999999
   h2
-    font-size: 1.5em !important
+    font-size: 2rem !important
     margin-top: 50px
     margin-bottom: 20px
-    color: #8671b8
   h3
-    font-size: 1.3em !important
+    font-size: 1.7rem !important
     margin-top: 40px
     margin-bottom: 10px
   h4
-    font-size: 1.2em !important
+    font-size: 1.5rem !important
     margin-top: 20px
     margin-bottom: 10px
   h5
-    font-size: .83em !important
+    font-size: 1.2rem !important
   h6
-    font-size: .67em !important
+    font-size: .78rem !important
 
   .language-plaintext.highlighter-rouge
     background-color: #f5f5f5
     border-radius: 3px
     padding: .20em .5em
-    font-family: Consolas
+    font-family: 'Source Code Pro', monospace !important
     font-weight: bold
   strong
     font-weight: 700
+    color: #8671b8
 
   img
     width: 100%
