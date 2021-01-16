@@ -39,12 +39,12 @@ vi .git/gitmessage
 다른 개발자 분들의 글을 참고해서 템플릿 틀을 잡고 기존에 Commit에 사용하던 Emoji도 같이 첨부하였다.
 ```bash
 # [<type>] <subject>
-| =========== Subject 50 Characters ============ |
+# | ========== Subject 50 Characters =========== |
 # Example : [feat] Implement login
 
 
 # (Optional) Body
-| ======================== Body 72 Characters ======================== |
+# | ======================= Body 72 Chracters ======================== |
 
 # (Optional) <Resource> <Issue/Ticket> <Number>
 # Example : Github Issue #114
