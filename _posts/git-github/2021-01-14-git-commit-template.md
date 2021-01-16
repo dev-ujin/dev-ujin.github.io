@@ -53,7 +53,7 @@ vi .git/gitmessage
 # feat       sparkles           New feature
 # fix        beetle             Bug fix
 # refactor   hammer             Code refactor (code change)
-# style      art                Format/Structure improvement (no code change)
+# style      art                Format/Structure improvement (no production code change)
 # doc        pencil             Everything related to documentation
 # test       white_check_mark   Everything related to test
 # chore      moyai              Etc (no production code change)
