@@ -80,7 +80,7 @@ comments: 1
 (포스트 링크)
 
 # 3. 프로젝트 결과 📊
-![index-page](../../assets/res/project/portfolio/index-page.PNG)
+![index-page](../assets/res/project/portfolio/index-page.PNG)
 🔗 [Github Source Code](https://github.com/dev-ujin/portfolio)  
 🌐 [포트폴리오](https://dev-ujin.github.io/portfolio)
 
