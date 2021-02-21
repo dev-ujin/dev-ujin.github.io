@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "[C++] BOJ/16282 - Black Chain"
+title: "[C++] 백준/16282 - Black Chain"
 date: 2021-02-16 22:07:00 0800
 categories: 🔥Coding-Challenge
-tags: cpp
+tags: cpp boj
 comments: 1
 changefreq: daily
 priority: 1
 ---
 
 > [❓ 문제 보기](https://www.acmicpc.net/problem/16282)
-[✔️ 전체 소스 보기](https://github.com/dev-ujin/cpp-coding-test/tree/master/BOJ_16282_Black_Chain)
+[✔️ 전체 소스 보기](https://github.com/dev-ujin/cpp-coding-test/tree/master/BOJ_16282_Black_Chain.cpp)
 
 '고리가 n그램일 때 몇 개의 고리를 풀어야 할까?'와 'n개의 고리를 풀면 최대 몇 그램까지 표현할 수 있을까?' 두 가지 시작점을 생각할 수 있는데 나는 첫 번째 관점으로 접근하다가 8그램을 손수 그려볼 때쯤 두 번째 관점을 떠올렸다. 두 번째 관점으로 접근하여 고리 갯수를 1부터 점점 늘려서 계산해보면 규칙을 찾을 수 있다.
 
