@@ -108,3 +108,44 @@ mongoose.connect('mongodb+srv://<username>:<password>@<clustername>.porkr.mongod
 ## 연결 확인하기
 - `npm run start`을 눌러 console에 'MongDB Connected...' 메시지가 출력되는지 확인한다.
 
+# [4] 비밀 설정 정보 관리(예: MongoDB 연결 key 분리하기)
+- git으로 버전관리를 하면 github에 데이터베이스 연결 정보나, API key 같은 중요한 정보들이 노출되지 않도록 신경써야한다.
+- `process.env.NODE_ENV`: 환경설정 변수로 현재 환경이 개발모드인지, 배포모드인지 알려준다.
+- 프로젝트에 `config` 폴더를 만들어 각각 `dev.js`, `key.js`, `prod.js` 세 개의 파일을 만든다.
+
+🔽 key.js: process.env.NODE_ENV 변수에 따라 각각 다른 파일에서 export할 수 있도록 경우를 나눈다.
+```javascript
+if (process.env.NODE_ENV === 'production') {
+    module.exports = require('./prod');
+}
+else {
+    module.exports = require('./dev');
+}
+```
+🔽 dev.js: 개발모드인 경우
+```javascript
+module.exports = {
+    mongoURI: 'mongodb+srv://<username>:<password>@<clustername>.porkr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+}
+```
+
+🔽 prod.js: 배포모드인 경우
+```javascript
+module.exports = {
+    mongoURI: process.env.MONGO_URI
+}
+```
+
+- `index.js`를 수정한다.
+
+🔽 connect에 필요한 값을 간접적으로 가져올 수 있도록 코드를 바꾼다.
+```javascript
+const config = require("./config/key") // 추가
+
+mongoose.connect(config.mongoURI, { // 수정
+    // 생략
+    ...
+```
+- `.gitignore`에 `dev.js`를 추가한다.
+
+
