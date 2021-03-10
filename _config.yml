@@ -33,7 +33,7 @@ google_tracking_id: "UA-190151750-1"
 disqus_shortname: "manduu"
 
 # Build settings
-#markdown: kramdown
+markdown: kramdown
 
 plugins:
   - jekyll-feed
